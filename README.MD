@@ -48,3 +48,16 @@
 
 7. ###代码格式化
 `npm i lint-staged -S`
+
+```json
+"husky": {
+    "hooks": {
+      "pre-commit":"lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "post-commit":"conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+    }
+  },
+  "lint-staged": {
+    "*.tsx": "eslint --fix"
+  }
+```
