@@ -45,3 +45,6 @@
 6. ### 生成变更日志
 - 安装 `npm i -g conventional-changelog-cli`
 - 生成最新的日志 `conventional-changelog -p angular -i CHANGELOG.md -s`
+
+7. ###代码格式化
+`npm i lint-staged -S`
