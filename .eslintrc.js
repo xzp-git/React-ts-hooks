@@ -21,6 +21,6 @@ module.exports = {
     "@typescript-eslint"
   ],
   "rules": {
-    "indent":["error",2]
+    "indent":["error", 2]
   }
 };

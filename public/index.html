@@ -6,6 +6,14 @@
   <title>小优课堂</title>
 </head>
 <body>
+  <script type="text/javascript">
+    let docElement = document.documentElement
+    function setRemUnit() {
+      docElement.style.fontSize = docElement.clientWidth/10 + 'px'
+    }
+    setRemUnit()
+    window.addEventListener('resize', setRemUnit)
+  </script>
   <div id="root"></div>
 </body>
 </html>
