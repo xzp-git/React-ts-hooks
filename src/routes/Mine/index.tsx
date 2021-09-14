@@ -1,14 +1,19 @@
 import React, {PropsWithChildren} from 'react'
 import { connect } from 'react-redux'
 import { RouteComponentProps } from 'react-router-dom'
-
-type Prop = PropsWithChildren<RouteComponentProps>
+import {RootState,MineState} from '@/store/reducers'
+type Prop = PropsWithChildren<RouteComponentProps> & MineState
 
 function Mine(props:Prop) {
   return(
     <h1>
-      Mine
+      {props.title}
     </h1>
   )
 }
-export default connect()(Mine)
+
+function mapStateToProps(state:RootState):MineState{
+  return state.mine
+}
+
+export default connect(mapStateToProps)(Mine)

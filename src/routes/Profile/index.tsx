@@ -1,14 +1,19 @@
 import React, {PropsWithChildren} from 'react'
 import { connect } from 'react-redux'
 import { RouteComponentProps } from 'react-router-dom'
-
-type Prop = PropsWithChildren<RouteComponentProps>
+import {RootState,ProfileState} from '@/store/reducers'
+type Prop = PropsWithChildren<RouteComponentProps> & ProfileState
 
 function Profile(props:Prop) {
   return(
     <h1>
-      Profile
+      {props.title}
     </h1>
   )
 }
-export default connect()(Profile)
+
+function mapStateToProps(state:RootState):ProfileState{
+  return state.profile
+}
+
+export default connect(mapStateToProps)(Profile)
