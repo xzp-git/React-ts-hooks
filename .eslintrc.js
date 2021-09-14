@@ -21,6 +21,9 @@ module.exports = {
     "@typescript-eslint"
   ],
   "rules": {
-    "indent":["error", 2]
+    "indent":["error", 2],
+    // 统一换行符，"\n" unix(for LF) and "\r\n" for windows(CRLF)，默认unix
+    // off或0: 禁用规则
+    'linebreak-style': 'off'
   }
 };
