@@ -1,0 +1,44 @@
+@BG_COLOR:#242424;
+.home-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    .logo-header{
+        height: 100px;
+        background-color: @BG_COLOR;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            height: 100px;
+            margin-left: 20px;
+        }
+        span.anticon.anticon-bars{
+            font-size: 60px;
+            margin-right: 20px;
+        }
+    }
+    .category{
+        position:absolute;
+        width: 100%;
+        top: 100px;
+        left: 0;
+        background-color: #42b983;
+        li{
+            line-height: 60px;
+            text-align: center;
+            color: #fff;
+            font-size: 30px;
+            border-top: 1px solid #fff ;
+            &.active{
+                color: lightsalmon;
+            }
+        }
+    }
+}
+
+
+

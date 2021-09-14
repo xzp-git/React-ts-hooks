@@ -2,7 +2,9 @@ import React, {PropsWithChildren} from 'react'
 import { connect } from 'react-redux'
 import { RouteComponentProps } from 'react-router-dom'
 import {RootState,ProfileState} from '@/store/reducers'
-type Prop = PropsWithChildren<RouteComponentProps> & ProfileState
+type StateProps = ReturnType<typeof mapStateToProps>
+
+type Prop = PropsWithChildren<RouteComponentProps> & StateProps 
 
 function Profile(props:Prop) {
   return(

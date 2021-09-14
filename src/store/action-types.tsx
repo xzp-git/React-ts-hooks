@@ -1,0 +1,3 @@
+
+//设置当前的分类
+export const SET_CURRENT_CATEGORY = 'SET_CURRENT_CATEGORY'
