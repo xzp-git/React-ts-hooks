@@ -1,7 +1,7 @@
 import React from 'react'
 
 import {BarsOutlined} from '@ant-design/icons'
-import logo from '@/assets/images/logo.jpg'
+import logo from '@/assets/images/logo.png'
 
 import classname from 'classnames'
 import './index.less'
